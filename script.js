@@ -21,7 +21,7 @@ async function clickEvent()   // Called on click of search button
     }
   
     if(text != ''){
-    getGithubData();
+    await getGithubData();
     document.getElementById('prev').style.visibility = "visible";
     document.getElementById('next').style.visibility = "visible";
     }
@@ -39,16 +39,16 @@ let clickPrev= () =>        // call on click of prev button
     getGithubData();
 }
 
-    let clickNext= ()=>     // call on click of next button
-    {
+let clickNext= ()=>     // call on click of next button
+{
     start+=10;
-
     let list= document.getElementsByClassName('list');
     for (let i = 0; i < list.length; i ++) {
     list[i].style.display = 'none';
     }
     getGithubData();
 }
+
 
 async function getGithubData()
 {
