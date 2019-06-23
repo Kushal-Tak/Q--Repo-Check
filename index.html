@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src = "script.js"></script>
+    
+</head>
+
+<body background="pictures/bkg.jpeg">
+	<div >
+	<img src= " pictures/Qlogo.png" id="QlogoPos" height="90" width="220">
+	<h1 id="title"> Q Repo Check </h1>
+	</div>
+
+	<div id ="input">
+		<center>
+		<button id="btn" onclick= clickEvent()> Search </button>
+		<input type="text" id="text" />
+		</center>
+	</div>
+
+	<div id = "content">
+		<p id ="pos"> </p>	
+		<ol id ="myList">
+		</ol>
+	</div>
+
+	<div >
+			<center>
+			<button id="prev" onclick= clickPrev()> Prev</button>
+			<button id="next" onclick= clickNext()> Next</button>
+			</center>
+	</div>
+
+</body>
+
+
+<style>
+		#title{
+			color:#f2ddcb;
+			font-size: 35px;
+			text-align: center
+			
+		}
+
+		#content
+		{
+			color:#fffdfb;
+			font-weight: bolder
+		}
+
+		#prev{
+			visibility: hidden
+		}
+
+		#next{
+			visibility: hidden
+		}
+
+</style>
+
+
+
+</html>
