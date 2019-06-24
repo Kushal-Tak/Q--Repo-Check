@@ -20,7 +20,7 @@ async function clickEvent()   // Called on click of search button
       url = 'https://api.github.com/search/repositories?q='+text;
     }
   
-    if(text != ''){
+    if(text != ''){             // If there is no input it will alert to enter input
     await getGithubData();
     document.getElementById('prev').style.visibility = "visible";
     document.getElementById('next').style.visibility = "visible";
