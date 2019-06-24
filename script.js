@@ -25,6 +25,8 @@ async function clickEvent()   // Called on click of search button
     document.getElementById('prev').style.visibility = "visible";
     document.getElementById('next').style.visibility = "visible";
     }
+    else
+        alert("Please enter text")
 }
 
 let clickPrev= () =>        // call on click of prev button
